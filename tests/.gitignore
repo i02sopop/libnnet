@@ -1,0 +1,5 @@
+/.deps/
+/Makefile
+/Makefile.in
+/check_libnnet*
+/test-suite.log

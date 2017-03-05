@@ -1,0 +1,133 @@
+ Contribute to libnnet project
+===============================
+
+There are six main ways to contribute to this project. The first one is test the
+program and report the bugs founded. If you find any bug, please visit the
+Testers section of this document to know how to report it to us.
+
+The next way of collaboration with the project is to donate some money to help in
+the mainteinance of the project. This money can be assigned to maintain the
+project's server (change hardware, renew the domain, ...) or to pay a developer
+to work full time in the project. To know how to donate money to the project,
+please visit the Donations section in this document.
+
+If you prefer to translate either the program, the documentation or the web page
+of the project in any of the languages needs, please visit the Translators
+section of this document.
+
+If you want to generate or modify the project's documentation, please visit the
+Documenters section of this document.
+
+If you want to contribute in the administration of the project's server (where we
+have the webpage, the git repository and all the resources of the project),
+please visit the Administrators section of this document.
+
+And, finally, if you want to help in the coding of the project, please visit the
+Developers section of this document.
+
+If you find another way to collaborate with the project, please contact with
+palvarez@ritho.net exposing your idea.
+
+ Testers
+=========
+
+The tests are one of the most important part of any project, because is the way
+to check that the software is working as expected. If you want to collaborate
+with the project making tests you have three ways to do it:
+
+* Test the software by hand. It's important to test every corner case you can
+  imagine and report every error you find.
+* Create test case to test automatically the diferent functionality of the
+  software and some error cases. This test cases can be unitary tests, black box
+  tests, white box tests, ... Basically any type of test you can think of.
+* Execute the existant automatic tests, report the bugs when found them or fix
+  the tests if the source code has change and the test is not valid anymore as
+  is.
+
+The automatic tests are in the tests directory (what a surprise!), and to execute
+them you have to run "make check" in the top directory. When you run the tests
+you can see the results and errors generated both in the screen and in a file
+generated in the tests directory.
+
+To report a bug please visit the project page at github, click on the Issues
+section and add a new issue. Please, be as descriptive as possible with all the
+information you can and add an email address to contact with you if needed.
+
+Remember that the important thing of the tests are find errors, so it's important
+to test both the usual functionality and unusual situations that never have to
+happen, and don't feel bad about discover a bug, remember you are helping the
+project reporting it.
+
+ Donations
+===========
+
+Actually we don't have defined a donation method to the project, but if you want
+to donate some money or hardware (computers, keyboards, monitors, ...), please
+contact <palvarez@ritho.net> or, make your proposal and we find the way to make
+the donation.
+
+ Translators
+=============
+
+One of the concerns about the project is to reach as many users as possible, so,
+in order to do that, it's important to have as much documentation, specially
+technical documentation, available to the users in their own language. If you
+want to translate any documentation to any language, please check in github if
+there's already any task in progress about the translation you want to make in
+order to coordinate with the person responsible of that translation and, if
+there's no task created, feel free to create the issue in github and start
+working on it.
+
+ Documenters
+=============
+
+Documentation, specially technical documentation, is very important for the
+usefulness of this project. This documentation, to be useful, should be available
+both on github (in the wiki) and in the doc directory of the project in order to
+be easily distributable, so be sure to generate the documentation in plain text
+to be able to convert it to different formats.
+
+If you want to do small changes to existant documentation, you don't need to ask
+permission or generate an issue in github, but if you want to do more substantial
+changes you should coordinate with the rest contributors of the project, so check
+in github if there's a issue or any responsible for the documentation you are
+willing to apport. If there's not issue or responsible, you can create your own
+issue on github. In case of doubt, please contact palvarez@ritho.net.
+
+ Administrators
+================
+
+The project needs administrators to update the website, maintain the email
+lists, ... In the github issues page you can find some tasks to do by the
+administrators sorted by difficulty and priority. If you want to do any of the
+tasks please contact <palvarez@ritho.net> in order to coordinate the tasks.
+
+ Developers
+============
+
+libnnet is handled in a git repository that you can find in the github's project
+page at https://github.com/i02sopop/libnnet. When it's needed, it would be
+available mailing lists to coordinate between developers.
+
+If you want to start collaborating with the project you can check the
+issues category in the github page to see the bugs opened about the
+project.
+
+By default permissions for push are restricted to the close collaborators of the
+project, so if you want to do some changes and you're not part of the collaborator
+team you'll need to fork the repository and do a pull request from your fork. Even
+for the close collaborators, in order to share the knowledge you'll need to do a
+pull request and let other developer to review the changes and merge it to the
+branch you are doing the request.
+
+The repository have two important branches, master, which is the last stable
+release of the project, and develop, which have the work for the next release.
+The project follow git flow, so it have one branch per functionality/issue to
+solve, and the feature branch is deleted after the merge. If you want to fix a
+bug on a current or past release you'll need to do a branch over master and
+do the PR over master, and, if there's any problem merging to master because
+you're fixing a bug on an old release and it have conflicts, it will be created
+a branch for the fixes for that specific version. Each release will be tag
+properly to facilitate fixes on old versions of the project.
+
+In case of doubt, please contact palvarez@ritho.net.

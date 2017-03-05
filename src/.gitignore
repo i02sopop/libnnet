@@ -1,0 +1,6 @@
+/*.o
+/Makefile
+/Makefile.in*
+/TAGS
+/.deps
+/libnnet.a

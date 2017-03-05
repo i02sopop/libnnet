@@ -1,0 +1,21 @@
+2017-03-04  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Remove intl.
+	* configure.ac (AC_CONFIG_FILES): Remove intl/Makefile.
+
+2017-03-04  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/intldir.m4: Upgrade to gettext-0.19.8.1.
+	* m4/uintmax_t.m4: Upgrade to gettext-0.19.8.1.
+	* Makefile.am (SUBDIRS): Add intl.
+	* configure.ac (AC_CONFIG_FILES): Add intl/Makefile.
+
+2017-03-04  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* m4/lib-prefix.m4: Upgrade to gettext-0.19.8.1.
+	* m4/nls.m4: Upgrade to gettext-0.19.8.1.
+
+libnnet 0.0.1
+
+2017-03-04 Pablo Alvarez de Sotomayor Posadillo <palvarez@ritho.net>
+	* First release of libnnet.
